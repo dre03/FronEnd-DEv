@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,57 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #030303;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #d7a528;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #d7a528;
+  color: white;
+}
+
+/* card  */
+.grid-container{
+  margin-top: 20px;
+  display: flex;
+  justify-items: flex-start;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* footer  */
+footer{
+  margin-top: 10px;
+  text-align: center;
+  background-color: #d7a528;
+  padding: 20px;
 }
