@@ -1,0 +1,79 @@
+/* Small Screen */
+.container{
+    margin: 1rem;
+}
+.herof{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.herof__left{
+    margin-bottom: 1rem;
+}
+.herof__img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.herof__title{
+    color: #1b4965;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.herof__form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.herof__label{
+    font-size: 1.2rem;
+    color: #495057;
+}
+.herof__input{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.herof__btn{
+    width: 100%;
+    background-color: #1b4965;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.herof__btn:hover{
+    background-color: #003554;
+}
+
+/* large Screen */
+@media (min-width: 920px){
+    .container{
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+    .herof{
+        margin: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .herof__left{
+        flex-basis: 50%;
+    }
+    .herof__right{
+        flex-basis: 40%;
+    }
+    .herof__title{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
