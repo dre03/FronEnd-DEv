@@ -1,13 +1,10 @@
 import Movie from '../Movie/Movie';
 import styles from './Movies.module.css';
-import data from '../../utils/constants/data';
-//import useStat
-import {useState} from 'react'
-import {nanoid} from 'nanoid'
-const Movies = () =>{
+import {nanoid} from 'nanoid';
 
+const Movies = (props) =>{
     // membuat variabel movies
-    const [movies, setMovies] = useState(data) 
+    const {movies, setMovies} = props
     //funsi menambah data vilem
     const handleClick = ()=>{
         const newFilm = {
@@ -20,6 +17,7 @@ const Movies = () =>{
         //update state movie: setmovie
         setMovies([...movies, newFilm]);
     }
+
     return(
         <div className={styles.container}>
             <section className={styles.movies}>
