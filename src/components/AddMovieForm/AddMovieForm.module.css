@@ -52,6 +52,9 @@
 .herof__btn:hover{
     background-color: #003554;
 }
+.eror{
+    color: red;
+}
 
 /* large Screen */
 @media (min-width: 920px){

@@ -20,6 +20,12 @@
 .navbar__item{
     margin-bottom: 1rem;
 }
+
+.navbar__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
  /* Medium Screen*/
  @media(min-width: 768px) {
     .navbar{
