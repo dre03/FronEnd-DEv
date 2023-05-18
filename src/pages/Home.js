@@ -3,6 +3,7 @@ import AddMovieForm from "../components/AddMovieForm/AddMovieForm";
 import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
 import data from "../utils/constants/data";
+import Counter from "../Counter";
 
 const Main = () =>{
     //state baru
@@ -14,6 +15,10 @@ const Main = () =>{
             <AddMovieForm movies={movies} setMovies={setMovies}/>
         </main>
    )
+
+// return(
+//     <Counter />
+// )
 }
 
 const Home = () =>{
