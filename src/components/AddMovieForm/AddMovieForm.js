@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './AddMovieForm.module.css';
 import { nanoid } from 'nanoid';
 import Alert from '../Alert/Alert';
+import Button from '../ui/Button';
 
 const AddMovieForm = (props) =>{
     // destructing props: state movies
@@ -97,7 +98,7 @@ const [formData, setFormData] = useState({
                             <option value="comedy">Comedy</option>
                         </select>
                         {isErrors.type && <Alert>Kategori Wajib diisi</Alert>}
-                        <button className={styles.herof__btn}>Submit</button>
+                        <Button varian="navi" full>Submit</Button>
                     </form>
                 </div>
             </section>

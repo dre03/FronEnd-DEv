@@ -3,7 +3,7 @@ import AddMovieForm from "../components/AddMovieForm/AddMovieForm";
 import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
 import data from "../utils/constants/data";
-import Counter from "../Counter";
+// import Counter from "../Counter";
 
 const Main = () =>{
     //state baru

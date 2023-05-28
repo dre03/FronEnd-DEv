@@ -1,3 +1,6 @@
+import styled from "styled-components";
+
+const StyledHero = styled.div`
 /* small Screen */
 .container{
     margin: 1rem;
@@ -59,3 +62,5 @@
         flex-basis: 60%;
     }
 }
+`
+export default StyledHero;
