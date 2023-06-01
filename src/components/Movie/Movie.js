@@ -7,9 +7,9 @@ const Movie = (props) =>{
     return(
         <StyledMovie>
         <div>
-            <img src={movie.poster} alt='Internet Terputus' />
+            <img src={movie.poster || `https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt='Internet Terputus' />
             <h3>{movie.title}</h3>
-            <p>{movie.year}</p>
+            <p>{movie.year || movie.release_date}</p>
         </div>
         </StyledMovie>
     )
