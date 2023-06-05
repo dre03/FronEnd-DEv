@@ -14,8 +14,8 @@ const StyledHero = styled.div`
     margin-bottom: 1rem;
 }
 .hero__title{
-    color: #1b4965;
-    margin-bottom: 1rem;
+    color: #003554;
+    margin-top: 4rem;
     font-size: 2.44rem;
 }
 .hero__genre{
@@ -59,7 +59,7 @@ const StyledHero = styled.div`
         flex-basis: 50%;
     }
     .hero__right{
-        flex-basis: 60%;
+        flex-basis: 40%;
     }
 }
 `

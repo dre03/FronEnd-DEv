@@ -10,8 +10,9 @@ function PopularMovie(){
     const URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
 
     //membuat state movies
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([]);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     async function getPopularMovie(){
     // Fetch data dari axios
         const response = await axios(URL);
@@ -21,10 +22,7 @@ function PopularMovie(){
 
     useEffect(() =>{
     getPopularMovie()
-    }, [])
-
-    console.log(movies);
-
+    }, [getPopularMovie])
     return(
     <>
         <Hero />

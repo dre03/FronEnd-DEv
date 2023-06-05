@@ -13,7 +13,7 @@ const [formData, setFormData] = useState({
         title: "",
         date: "",
         poster: "",
-        type: ""
+        type: "movie"
     })
 
     //membuat fungsi handleChange untuk semua input form
@@ -94,7 +94,7 @@ const [formData, setFormData] = useState({
                             <option>Pilih Kategori</option>
                             <option value="movie">Movie</option>
                             <option value="drama">Drama</option>
-                            <option selected value="horor">Horror</option>
+                            <option value="horor">Horror</option>
                             <option value="comedy">Comedy</option>
                         </select>
                         {isErrors.type && <Alert>Kategori Wajib diisi</Alert>}

@@ -7,6 +7,7 @@ border: none;
 border-radius: 8px;
 color: #fff;
 cursor: pointer;
+text-decoration: none;
 :hover{
     background-color: #003554;
 }
