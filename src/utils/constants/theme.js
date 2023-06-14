@@ -3,7 +3,8 @@ const theme = {
     // warna tema
     colors: {
         navi: "#1b4965",
-        yellow: "#E57C23"
+        yellow: "#E57C23",
+        black: 'black'
     },
     buttons:{
         sm: `

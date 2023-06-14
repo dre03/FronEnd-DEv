@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyledMovie = styled.div`
     margin-bottom: 1rem;
-
     img{
         border-radius: 25px;
         max-width: 100%;
@@ -11,9 +10,12 @@ const StyledMovie = styled.div`
     }
 
     h3{
-        color: #1b4965;
         font-size: 1.95rem;
-        margin-bottom: 0.5rem;  
+        margin-bottom: 0.5rem;
+    }
+    h3 a{
+        text-decoration: none;
+        color: #1b4965;
     }
 
     p{

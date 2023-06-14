@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 const StyledHero = styled.div`
 /* small Screen */
-.container{
     margin: 1rem;
-}
+    
 .hero{
     display: flex;
     flex-direction: column;

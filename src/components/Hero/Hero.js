@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Button from '../ui/Button';
 import StyledHero from './Hero.styled';
 import axios from 'axios';
+import ENDPOINTS from '../../utils/constants/endpoints';
 
 const Hero = () =>{
 
@@ -20,8 +21,8 @@ const Hero = () =>{
    */
   // eslint-disable-next-line react-hooks/exhaustive-deps
   async function getTrendingMovie() {
-    const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
-    const response = await axios(URL);
+    // const URL = `https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`;
+    const response = await axios(ENDPOINTS.TRENDING);
     return response.data.results[0];
   }
 
@@ -36,7 +37,7 @@ const Hero = () =>{
             const URL = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&append_to_response=videos`;
             const response = await axios.get(URL);
             setMovie(response.data);
-    }, [API_KEY, getTrendingMovie]);
+    }, [API_KEY]);
   /**
    * Menjalankan useEffect.
    * Parameter kedua digunakan untuk custom lifecycle update.

@@ -7,11 +7,11 @@ import data from "../utils/constants/data";
 
 const Main = () =>{
     //state baru
-    const [movies, setMovies] = useState(data)
+    const [ movies, setMovies] = useState(data)
     return(
         <main>
             <Hero />
-            <Movies movies={movies} setMovies={setMovies}/>
+            <Movies title="Latest Movie" movies={movies} setMovies={setMovies}/>
             <AddMovieForm movies={movies} setMovies={setMovies}/>
         </main>
    )
