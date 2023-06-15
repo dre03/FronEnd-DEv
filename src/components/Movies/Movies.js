@@ -1,10 +1,12 @@
 import Movie from '../Movie/Movie';
 import styles from './Movies.module.css';
+import { useSelector } from 'react-redux';
 // import {nanoid} from 'nanoid';
 
-const Movies = (props) =>{
+const Movies = ({title}) =>{
     // membuat variabel movies
-    const {title, movies} = props
+    // const {title, movies} = props
+    const movies = useSelector((state) => state.movies.movies)
 
 
     return(

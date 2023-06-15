@@ -1,18 +1,16 @@
-import { useState } from "react";
-import AddMovieForm from "../components/AddMovieForm/AddMovieForm";
+// import { useState } from "react";
 import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
-import data from "../utils/constants/data";
+// import data from "../utils/constants/data";
 // import Counter from "../Counter";
 
 const Main = () =>{
     //state baru
-    const [ movies, setMovies] = useState(data)
+    // const [ movies, setMovies] = useState(data)
     return(
         <main>
             <Hero />
-            <Movies title="Latest Movie" movies={movies} setMovies={setMovies}/>
-            <AddMovieForm movies={movies} setMovies={setMovies}/>
+            <Movies title="Latest Movie" />
         </main>
    )
 

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Button from "../../components/ui/Button";
 import styled from "styled-components";
 import Recomen from "../../components/Recomen/Recomen";
+
 function Detail (){
     const StyledDetail = styled.div`
         // Mobile Screen
@@ -48,6 +49,9 @@ function Detail (){
   @media screen and (min-width: 992px) {
   }
 `;
+
+
+  
     const {id} = useParams();
     const API_KEY = process.env.REACT_APP_API_KEY;
     const [movie, setMovie] = useState('')

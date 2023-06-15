@@ -9,8 +9,8 @@ import { ThemeProvider } from "styled-components";
 import theme from "./utils/constants/theme";
 import GlobalStyle from "./components/GlobalStyle";
 import Detail from "./pages/movie/Detail";
-
 const App = () =>{
+  // const [movies, setMovies] = useState(data)
   return(
     <div>
     {/* menggunakan hthemeprovider */}

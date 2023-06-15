@@ -1,17 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import axios from "axios";
 import Movies from "../../components/Movies/Movies";
 import ENDPOINTS from "../../utils/constants/endpoints";
+import { useDispatch } from "react-redux";
+import { updateMovies } from "../../features/moviesSlice";
 
 function NowPlayingMovie(){
-    const [movies, setMovies] = useState([]);
+    const dispatch = useDispatch()
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     async function getNowplayingMovie(){
         const response = await axios(ENDPOINTS.NOWPLAYING);
-
-        setMovies(response.data.results)
+        const movies = response.data.results;
+        dispatch(updateMovies(movies));
     }
 
     useEffect(() =>{
@@ -20,7 +22,7 @@ function NowPlayingMovie(){
     return(
     <>
         <Hero />
-        <Movies title="Now Playing" movies={movies}/>
+        <Movies title="Now Playing" />
     </>
     )
 }

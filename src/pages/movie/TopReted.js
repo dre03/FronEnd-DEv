@@ -1,16 +1,20 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import Movies from "../../components/Movies/Movies";
 import ENDPOINTS from "../../utils/constants/endpoints";
+import { useDispatch } from "react-redux";
+import { updateMovies } from "../../features/moviesSlice";
 
 function TopRetedMovie(){
-    const [movies, setMovies] = useState([]);
+
+    const dispatch = useDispatch();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     async function geTopretedMovie(){
         const response = await axios(ENDPOINTS.TOPRETED);
-        setMovies(response.data.results)
+        const movies = response.data.results;
+        dispatch(updateMovies(movies));
     }
 
     useEffect(() =>{
@@ -20,7 +24,7 @@ function TopRetedMovie(){
     return(
     <>
         <Hero />
-        <Movies title="Top Reated" movies={movies} />
+        <Movies title="Top Reated" />
     </>
     )
 }
